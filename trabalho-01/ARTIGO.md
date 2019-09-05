@@ -118,7 +118,7 @@
                     vetor = (int *) malloc(num_componentes * sizeof(int));
                     for (i = 0; i < num_componentes; i++){
                         printf("\nDigite o valor para a posicao %d do vetor: ", i+1);
-                        scanf("%f",&v[i]);
+                        scanf("%d",&v[i]);
                         }
                     printf("\n*********** Valores do vetor dinamico ************\n\n");
                     for (i = 0;i < num_componentes; i++){
