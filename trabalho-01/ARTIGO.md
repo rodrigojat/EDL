@@ -28,7 +28,8 @@
  • Estruturas de dados básica de Lua.
  • Cada elemento se constitui de uma chave e um valor, que podem ser de qualquer tipo de Lua.
  
- - Exemplos: 
+ • Exemplos: 
+      
     • Arrays(Índices numéricos por padrão):
       x = { 1,2,3 } 
       y = { 2,4,9 }
