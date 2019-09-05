@@ -126,7 +126,9 @@
                     }
                     free(vetor);
                   }
-      • Porém em C, se eu quisesse aumentar, adicionando no fim da lista ou meio um novo elemento, teriamos que fazer uma cópia do array acima para depois alocar mais memória para o novo (elemento+array atual) 
+      • Porém em C, se eu quisesse aumentar, adicionando no fim da lista ou no meio um novo elemento, teriamos que fazer uma cópia do array acima para depois alocar mais memória para o novo array (elemento+array atual). Tendo assím, que reestruturar violentamente o código em LUA.
+      
+      
 # Bibliografia
 
 * Site da linguagem: https://www.lua.org/portugues.html
