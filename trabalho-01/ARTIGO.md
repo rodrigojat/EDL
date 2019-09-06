@@ -183,11 +183,11 @@ Entretanto, alguns códigos em LUA precisam ser violentamente reestruturados par
       vetor = (int *) malloc(num_componentes * sizeof(int));
       for (i = 0; i < num_componentes; i++){
           printf("\nDigite o valor para a posicao %d do vetor: ", i+1);
-          scanf("%d",&v[i]);
+          scanf("%d",&vetor[i]);
           }
       printf("\n*********** Valores do vetor dinamico ************\n\n");
       for (i = 0;i < num_componentes; i++){
-            printf("%d\n",v[i]);
+            printf("%d\n",vetor[i]);
       }
       free(vetor);
     }
