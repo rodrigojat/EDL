@@ -1,0 +1,46 @@
+<?php
+
+  trait Velocidade {
+    public function velo(){
+      echo "Velocidade eh de " ; 
+    }
+  }
+
+  class Pessoa {
+    public $idade;
+    public $peso;
+    public $nome;
+    public $velocidade;
+
+    public function setVelo() {
+      $this->velocidade = 8;
+    }
+    use Velocidade;
+    public function VeloPessoa() {
+      echo "$this->velocidade km/h";
+    }
+
+  }
+
+  class Carro {
+    public $marca;
+    public $modelo;
+    public $anodefabricacao;
+    public function setVelo(){
+      $this->velocidade = 100;
+    }
+    use Velocidade;
+    public function VeloCarro(){
+      echo "$this->velocidade km/h";
+    }
+  }
+
+$obj = new Pessoa();
+$obj2 = new Carro();
+$obj2->setVelo();
+$obj2->velo();
+$obj2->VeloCarro();
+echo "<br>";
+$obj->setVelo();
+$obj->velo();
+$obj->VeloPessoa();
