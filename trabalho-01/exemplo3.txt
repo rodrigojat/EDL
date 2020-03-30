@@ -1,0 +1,33 @@
+<?php
+  class Pessoa {
+    public $name;
+    public $age;
+    public $phone;
+    
+    function PegaDados ($name,$age,$phone) {
+      $this->name = $name;
+      $this->age = $age;
+      $this->phone = $phone; 
+      }
+    }
+    
+   class Aluno extends Pessoa {
+    public $matricula;
+    public $curso;
+    
+    function Matricula ($matricula) {
+      $this->matricula = $matricula;
+    }
+    
+    function Curso ($curso){
+      $this->curso = $curso;
+    }
+    
+    }
+    
+    $Aluno = new Aluno();
+    $Aluno->PegaDados("Leonardo",18,21222324);
+    echo "Nome: $Aluno->name","<br>","Idade: $Aluno->age" ,"<br>","Telefone: $Aluno->phone ","<br>";
+    $Aluno->Matricula = '0012010495';
+    $Aluno->Curso = "Ciencia da Computaçao";
+    echo "Curso: $Aluno->Curso","<br>","Matricula: $Aluno->Matricula";
