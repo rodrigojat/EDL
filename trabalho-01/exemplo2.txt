@@ -1,0 +1,28 @@
+<?php
+  Class Aluno {
+    public $nome;
+    public $matricula;
+    
+    public function setNome ($nome) {
+      $this->nome = $nome;
+     }
+     
+     public function GetNome () {
+      return $this->nome;
+     }
+     public function setMatricula ($matricula) {
+      $this->matricula = $matricula;
+     }
+     public function GetMatricula () {
+      return $this->matricula;
+     }
+     
+  }
+  
+  $AlunoNovo = new Aluno();
+  $AlunoNovo->setNome("Rodrigo");
+  $AlunoNovo->setMatricula(201411111111);
+  echo $AlunoNovo->GetNome();
+  echo "<br>";
+  echo $AlunoNovo->GetMatricula();
+     
